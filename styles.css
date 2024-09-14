@@ -200,3 +200,87 @@ footer {
     border-radius: 0 0 15px 15px;
     font-size: 14px;
 }
+
+/* Media Queries: Responsive Design */
+@media (max-width: 768px) {
+    /* Resize fonts and adjust spacing for smaller screens */
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .contact-info, .skills, .education, .projects, .certifications {
+        margin: 15px 0;
+    }
+
+    .contact-info h3, .skills h3, .education h3, .projects h3, .certifications h3 {
+        font-size: 20px;
+    }
+
+    .skill-box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .skill-box span {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .project-item h4, .education-item h4 {
+        font-size: 18px;
+    }
+
+    .project-item p, .education-item p, .certifications li {
+        font-size: 14px;
+    }
+
+    .project-item a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    /* Reduce padding inside the container */
+    .resume-container {
+        padding: 20px;
+    }
+}
+
+/* Media Query for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .resume-container {
+        padding: 15px;
+    }
+
+    .contact-info li, .skill-box span, .project-item p, .education-item p {
+        font-size: 12px;
+    }
+
+    .project-item a {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
